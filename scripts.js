@@ -19,13 +19,15 @@ function setdate(){
     const hrs = now.getHours();
     const monthName = [
         'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August'
-, 'September', 'October', 'November', 'December',    ];
+, 'September', 'October', 'November', 'December',
+];
 
 if (hrs>12) {
    hours.innerHTML = hrs - 12;
 } else {
     hours.innerHTML = hrs;
 }
+
 seconds.innerHTML = String(seconds)
 .padStart(2, '0');
 minutes.innerHTML = String(minutes)
